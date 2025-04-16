@@ -24,6 +24,10 @@
       "react-app/jest"
     ]
   },
+  "engines": {  // <--- ADD THIS SECTION
+    "node": "22.4.x",  // Or "16.x", "20.x", etc. Choose a version compatible with your project
+    "npm": ">=8.0.0"  // Optional: specify npm version too if needed
+  },
   "browserslist": {
     "production": [
       ">0.2%",
