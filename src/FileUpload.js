@@ -33,12 +33,12 @@ export default function FileUpload() {
 
     const formData = new FormData();
     formData.append("file", file);
-
+//api - https://sea-lion-app-xbx6q.ondigitalocean.app/
 try {
       let response;
       alert(`Response: ${apiType}`)
       if (apiType === "midterm") {
-        response = await axios.post(`http://127.0.0.1:5000/${apiType}`, {
+        response = await axios.post(`https://sea-lion-app-xbx6q.ondigitalocean.app/${apiType}`, {
           config_path: "tmp/config.yaml",
         }, {
           headers: {
@@ -52,7 +52,7 @@ try {
       } 
       else if (apiType === "finalexam") {
 
-        response = await axios.post(`http://127.0.0.1:5000/${apiType}`, {
+        response = await axios.post(`https://sea-lion-app-xbx6q.ondigitalocean.app/${apiType}`, {
           config_path: "tmp/config.yaml",
         }, {
           headers: {
@@ -66,7 +66,7 @@ try {
       }
       
       else {
-        response = await axios.post(`http://127.0.0.1:5000/${apiType}`, formData, {
+        response = await axios.post(`https://sea-lion-app-xbx6q.ondigitalocean.app/${apiType}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -89,7 +89,7 @@ try {
     }
     
     try {
-      const response = await axios.get(`http://127.0.0.1:5000/download_zip/${downloadZip}`, {
+      const response = await axios.get(`https://sea-lion-app-xbx6q.ondigitalocean.app/download_zip/${downloadZip}`, {
         responseType: "blob",
       });
       
