@@ -1,0 +1,158 @@
+/* FileUpload.css */
+
+/* Reset default styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+}
+
+/* Main container styling (if you prefer custom classes over Tailwind) */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.file-upload-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* File input override (optional) */
+.file-input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* Button base styling */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+}
+
+/* Specific button styles */
+.button-upload {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+.button-upload:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.button-midsem {
+  background-color: #10b981; /* green-500 */
+  color: white;
+}
+
+.button-midsem:hover {
+  background-color: #059669; /* green-600 */
+}
+
+.button-download {
+  background-color: #8b5cf6; /* purple-500 */
+  color: white;
+}
+
+.button-download:hover {
+  background-color: #7c3aed; /* purple-600 */
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 24, 39, 0.5); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal content styling */
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Modal header */
+.modal-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Modal buttons container */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.modal-buttons button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Cancel button style */
+.modal-buttons .cancel-btn {
+  background-color: #d1d5db; /* gray-300 */
+  color: #000;
+}
+
+.modal-buttons .cancel-btn:hover {
+  background-color: #9ca3af; /* gray-400 */
+}
+
+/* Confirm button style */
+.modal-buttons .confirm-btn {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+.modal-buttons .confirm-btn:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+/* Animation for modal fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

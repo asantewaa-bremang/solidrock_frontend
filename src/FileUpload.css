@@ -1,0 +1,117 @@
+/* FileUpload.css */
+
+/* Container styles */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f7fafc; /* light gray background */
+  min-height: 100vh;
+}
+
+/* Title styling */
+.file-upload-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* File input styling */
+.file-upload-container input[type="file"] {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #1a202c;
+  border: 1px solid #d2d6dc;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Button base styles */
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 0.5rem;
+}
+
+/* Specific button colors */
+.button-blue {
+  background-color: #4299e1;
+}
+.button-blue:hover {
+  background-color: #3182ce;
+}
+
+.button-green {
+  background-color: #48bb78;
+}
+.button-green:hover {
+  background-color: #38a169;
+}
+
+.button-purple {
+  background-color: #9f7aea;
+}
+.button-purple:hover {
+  background-color: #805ad5;
+}
+
+/* Loading message */
+.loading {
+  margin-top: 1rem;
+  color: #4299e1;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 24, 39, 0.5); /* dark overlay */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+/* Modal header */
+.modal-content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Modal buttons container */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.button-orange {
+  background-color: orange;
+  color: white;
+}
+
+.button-red {
+  background-color: red;
+  color: white;
+}
+
+
